@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Silica Prediction</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="/static/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="/static/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+	<link rel="stylesheet" href="/static/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+	<div class="BG" style="background-image: url('/static/images/bg-01.png');">
+		<div class="container-contact3">
+			<div class="wrap-contact3">
+				<form class="contact3-form validate-form">
+					<span class="contact3-form-title">
+						Silica % prediction app
+						<p>
+							this application predict the percentage of the silica in a mining flotation process
+						</p>
+						<img src="/static/images/metso_rcs_flotation_cell.png" class="img">
+
+							<div class="patterns">
+							<svg width="100%" height="100%">
+								<defs>
+									<pattern id="polka-dots" x="0" y="0"
+														width="100" height="100"
+													 	patternUnits="userSpaceOnUse">
+										<circle fill="#be9ddf" cx="25" cy="25" r="3"></circle>
+									</pattern>
+										<style>
+								 			@import url("/static/https://fonts.googleapis.com/css?  family=Lora:400,400i,700,700i");
+							 			</style>
+
+								</defs>
+
+								<rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"> </rect>
+
+						 <text x="50%" y="60%"  text-anchor="middle"  >
+							Silica={{silica_percentage}}%
+						 </text>
+						 </svg>
+						</div>
+					</span>
+					<a href="https://github.com/aladdin-ai" class="fa fa-github" target="_blank"></a>
+
+				</form>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div id="dropDownSelect1"></div>
+
+	<script src="/static/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="/static/vendor/bootstrap/js/popper.js"></script>
+	<script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/static/vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+
+	<script src="/static/js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</body>
+</html>

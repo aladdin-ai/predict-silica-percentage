@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Silica Prediction</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="/static/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="/static/vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+</head>
+
+<body>
+	<div class="BG" style="background-image: url('/static/images/bg-01.png');">
+		<div class="container-contact3">
+			<div class="wrap-contact3">
+				<form class="contact3-form validate-form" action="/predict">
+					<span class="contact3-form-title">
+						Silica % prediction app
+						<p>
+							this application predict the percentage of the silica in a mining flotation process
+						</p>
+					</span>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.0000000001" name="Iron Feed" placeholder="Iron Feed percentage">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.00000000001" name="Silica Feed" placeholder="Silica Feed percentage">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.00000000001" name="Starch Flow" placeholder="Starch Flow">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Amina Flow" placeholder="Amina Flow">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Ore Pulp Flow" placeholder="Ore Pulp Flow">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Ore Pulp pH" placeholder="Ore Pulp pH">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Ore Pulp Density" placeholder="Ore Pulp Density">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Flotation Column 01 Air Flow" placeholder="Flotation Column 01 Air Flow">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Flotation Column 02 Air Flow" placeholder="Flotation Column 02 Air Flow">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Flotation Column 03 Air Flow" placeholder="Flotation Column 03 Air Flow">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Flotation Column 04 Air Flow" placeholder="Flotation Column 04 Air Flow">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Flotation Column 05 Air Flow" placeholder="Flotation Column 05 Air Flow">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Flotation Column 06 Air Flow" placeholder="Flotation Column 06 Air Flow">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Flotation Column 07 Air Flow" placeholder="Flotation Column 07 Air Flow">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Flotation Column 01 Level" placeholder="Flotation Column 01 Level">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Flotation Column 02 Level" placeholder="Flotation Column 02 Level">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Flotation Column 03 Level" placeholder="Flotation Column 03 Level">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Flotation Column 04 Level" placeholder="Flotation Column 04 Level">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Flotation Column 05 Level" placeholder="Flotation Column 05 Level">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Flotation Column 06 Level" placeholder="Flotation Column 06 Level">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 validate-input" data-validate="Required!">
+						<input class="input3" type="number" step="0.000000001" name="Flotation Column 07 Level" placeholder="Flotation Column 07 Level">
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 input3-select">
+						<div>
+							<select class="selection-2" name="Month">
+								<option>Month</option>
+								<option value="6">January</option>
+								<option value="7">February</option>
+								<option value="4">March</option>
+								<option value="0">April</option>
+								<option value="5">May</option>
+								<option value="3">June</option>
+								<option value="2">July</option>
+								<option value="1">August</option>
+								<option value="10">September</option>
+								<option value="9">October</option>
+								<option value="8">November</option>
+								<option value="-1">December</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 input3-select">
+						<div>
+							<select class="selection-2" name="Day" >
+								<option>Day</option>
+								<option value="1">Saturday</option>
+								<option value="2">Sunday</option>
+								<option value="0">Monday</option>
+								<option value="4">Tuesday</option>
+								<option value="5">Wednesday</option>
+								<option value="3">Thursday</option>
+								<option value="-1">Friday</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="wrap-input3 input3-select">
+						<div>
+							<select class="selection-2" name="Hour">
+								<option>Clock</option>
+								<option value="0">1</option>
+								<option value="1">2</option>
+								<option value="2">3</option>
+								<option value="3">4</option>
+								<option value="4">5</option>
+								<option value="5">6</option>
+								<option value="6">7</option>
+								<option value="7">8</option>
+								<option value="8">9</option>
+								<option value="9">10</option>
+								<option value="10">11</option>
+								<option value="11">12</option>
+								<option value="12">13</option>
+								<option value="13">14</option>
+								<option value="14">15</option>
+								<option value="15">16</option>
+								<option value="16">17</option>
+								<option value="17">18</option>
+								<option value="18">19</option>
+								<option value="19">20</option>
+								<option value="20">21</option>
+								<option value="21">22</option>
+								<option value="22">23</option>
+								<option value="-1">-1</option>
+							</select>
+						</div>
+						<span class="focus-input3"></span>
+					</div>
+
+					<div class="container-contact3-form-btn">
+						<button class="contact3-form-btn">
+							P r e d i c t
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="dropDownSelect1"></div>
+
+	<script src="/static/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="/static/vendor/bootstrap/js/popper.js"></script>
+	<script src="/static/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="/static/vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+
+	<script src="/static/js/main.js"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
